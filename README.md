@@ -10,11 +10,11 @@ Contents : Library, Simulation, Arduino Code
 
 - Compile the file using the command : 
 
-gcc -o destined_execution_file.exe fsm_led_simulation.cpp fsm_led.cpp
+gcc -o destined_execution_file.exe fsm_led_simulation.cpp ../src/fsm_led.cpp
 
 or
 
-gcc -o destined_execution_file.exe fsm_edge_simulation.cpp fsm_edge.cpp
+gcc -o destined_execution_file.exe fsm_edge_simulation.cpp ../src/fsm_edge.cpp
 
 - Run the execution file
 
