@@ -9,7 +9,7 @@ bool fsm_edge :: process(bool input) {
             // do nothing
         }
         else {
-            // if input is On, flip the output and change to STATE_1_Edge
+            // if input is On, Rising edge is detected. Return ON
             state = STATE_1_Edge;
             count = 0;
             return ON;
@@ -64,14 +64,14 @@ bool fsm_edge :: process(bool input) {
             state = STATE_0_Edge;
         }
         else {
-            // if input is On, system receiving another input, so flip the output and change state to STATE_1_Edge
+            // if input is On, system receiving another input, Rising edge is detected. Return ON
             count = 0;
             state = STATE_1_Edge;
             return ON;
         }
     }
 
-    // return output value
+    // With no rising edge condition, default return would be OFF
     return OFF;
 }
 

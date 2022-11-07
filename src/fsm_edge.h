@@ -34,7 +34,19 @@ class fsm_edge {
          * @return int fsm's output
          */
         bool process(bool input);
+
+        /**
+         * @brief Set the Count Threshold object
+         * 
+         * @param int val 
+         */
         void setCountThreshold(int val);
+
+        /**
+         * @brief Get the State object
+         * 
+         * @return States_Edge 
+         */
         States_Edge getState();
 };
 

@@ -2,16 +2,19 @@
 #include "fsm_edge.h"
 #include "fsm_led.h"
 
+// LED Pins
 #define LED_1 2
 #define LED_2 3
 #define LED_3 8
 #define LED_4 9
 
+// Button Pins
 #define BUT_1 6
 #define BUT_2 7
 
 #define PERIOD 100      // number of cycles before ISR
 
+// Initialize FSMs
 fsm_led fsmled;
 fsm_edge fsmedge1, fsmedge2;
 
